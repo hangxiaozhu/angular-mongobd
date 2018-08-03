@@ -1,0 +1,93 @@
+	<!--	2.HTML结构内容-->
+		<div class="home">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide1">
+					<a href="###"><img src="../img/首页/1477534750704.jpg" /></a>
+				</div>
+				<div class="swiper-slide slide2">
+					<a href="###"><img src="../img/首页/1496736755979.jpg" /></a>
+				</div>
+				<div class="swiper-slide slide3">
+					<a href="###"><img src="../img/首页/1496737794706.jpg" /></a>
+				</div>
+				<div class="swiper-slide slide4">
+					<a href="###"><img src="../img/首页/1496749108065.jpg" /></a>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev">
+				<div class="swiper">
+					<img class="one" src="../img/首页/jiantou.png" /></div>
+			</div>
+			<div class="swiper-button-next">
+				<div class="swipers"> <img class="one" src="../img/积分商城/rightjiantou.png" /></div>
+			</div>
+		</div>
+		<div class="hometwo">
+			<img src="../img/首页/1478244295004.jpg"/>
+			<img src="../img/首页/1477535879580.jpg"/>
+			<img src="../img/首页/1478244374905.jpg"/>
+			<img src="../img/首页/1478244430106.jpg"/>
+		</div>
+		<div class="homethree">
+			<div class="hometo">
+				<img src="../img/首页/img_55.png"/><span class="name">礼拜五</span><span class="names">Firiday</span>
+				<div class="star">			
+				<span id="time">距离开始</span> 
+				<span class="day time">0天</span>
+				<span class="hour time">07</span>
+				<span class="maohao">:</span>
+				<span class="minutes time">50</span>
+				<span class="maohao">:</span>
+				<span class="second time">50</span>
+				<a href="###"><span>更多</span><img src="../img/首页/img_2.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="hometh">
+			<ul>
+				<li><a href=""><img src="../img/首页/1502009485532.jpg"/></a>
+					<p>全脂奶粉（袋）两岁以上 Medallion </p>
+					<span class="pp">礼拜五价:</span><span class="price">¥165</span>
+				</li>
+				<li><a href=""><img src="../img/首页/1502012842351.jpg"/></a>
+					<p>艾维诺婴幼儿面霜 Aveeno Baby Cream （223ml） </p>
+					<span class="pp">礼拜五价:</span><span class="price">¥125</span>
+				</li>
+				<li><a href=""><img src="../img/首页/1502013333477.jpg"/></a>
+					<p>山羊奶皂 Caprina Goat Milk Soap （110g） </p>
+					<span class="pp">礼拜五价:</span><span class="price">¥28</span>
+				</li>
+				<li><a href=""><img src="../img/首页/1502013980529.jpg"/></a>
+					<p>意大利斯玛初榨橄榄油 ITALISSIMA Extra Virgin Olive Oil （500ml） </p>
+					<span class="pp">礼拜五价:</span><span class="price">¥132</span>
+				</li>
+			</ul>
+		</div>		
+		
+		<!--新鲜水果-->
+		<!--上部分-->
+		<div class="homethree" ng-repeat="x in category0">
+			<div class="hometo">
+				<img src="../img/首页/img_55.png"/><span class="name" ng-bind="x"></span><span class="names">优选全球好货</span>
+				<div class="star">			
+				<a ui-sref="sort"><span>更多</span><img src="../img/首页/img_2.png"/></a>
+				</div>
+			</div>
+		<!--下部分-->
+		<div class="homeths">
+			<ul>
+				<li ng-repeat="a in Product | unique:x | limitTo:4" ng-mouseenter="homeME($index,x,$event)" ng-mouseleave="homeML($index,x)"><a ui-sref="handlens({discounts:a.discounts, price:a.price, tradeName:a.tradeName, imgSrc:a.photo})"><img src={{a.photo}}/></a>
+					<div ng-bind="a.tradeName"></div>
+					<span class="pp" ng-bind="a.price | currency:'¥'"></span>
+					<span class="non" ng-bind="a.discounts | currency:'¥'"></span>
+					<span class="price"><img src="../img/海鲜水产/img_62.png"/></span>
+				</li>
+			</ul>
+		</div>
+
+		</div>
+		
+		</div>

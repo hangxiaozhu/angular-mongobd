@@ -1,0 +1,43 @@
+.protect a {
+	text-decoration: none;
+	color:#6A6A6A;
+}
+.protect .location{
+	line-height: 50px;
+	margin:20px auto;
+	width: 1280px;
+	height: 50px;
+background-color: #eeeeee;
+}
+.protect .location span{
+	font-size: 15px;
+	color:#6A6A6A;
+}
+.protect .location span:first-child{
+	margin-left:30px;
+}
+.protect .type {
+	text-align: center;
+	margin:0 auto;
+	margin-bottom:20px;
+	width: 1280px;
+	height: 609px;
+	border:1px solid #DDDDDD;
+}
+.protect .type h3 {
+	color: #4B943D;
+	font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px ;
+}
+.protect .type span{
+	margin-right:30px;
+    color: #999;
+	font-size: 15px;
+}
+.protect .type p{
+	line-height: 40px;
+	font-size: 20px;
+    margin: 0 10px;
+}
+

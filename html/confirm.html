@@ -1,0 +1,315 @@
+<div class="shop-hide"></div>
+<div class="shop-png">
+
+    <a ui-sref="home"><img src="../img/首页/logo.png" height="67" width="370"/></a>
+    <div class="shop-step">
+        <span >我的购物车</span>
+        <p>></p>
+        <span style="color:#F08200;">确认订单信息</span>
+        <p>></p>
+        <span >订单提交成功</span>
+    </div>
+
+</div>
+<!--提交订单-->
+
+<div class="content">
+
+        <div class="address-add  address-a">
+            <h4>收货人信息</h4>
+            <table>
+                <tbody><tr>
+                    <td>
+                        <span>*</span>
+                        收货人姓名：
+                    </td>
+                    <td>
+                        <input type="text" placeholder="收货人姓名" value="" name="username" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>*</span>
+                        所在地区：
+                    </td>
+                    <td>
+                        <select id="province" class="province"
+                                name="province_id">
+                            <option value="0" selected>请选择</option>
+
+                        </select>
+                        <select id="city_add" class="city_add" name="city_id">
+                            <option value="">请选择市</option>
+                        </select>
+                        <select id="area" class="area" name="area_id">
+                            <option value="">请选择区域</option>
+                        </select>
+                    </td>
+                    <input type="hidden" name="province" value="">
+                    <input type="hidden" name="city" value="">
+                    <input type="hidden" name="area" value="">
+                </tr>
+                <tr>
+                    <td>
+                        <span>*</span>
+                        详细地址：
+                    </td>
+                    <td>
+                        <input name="detail" placeholder="用于接收货物的详细地址" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>*</span>
+                        联系电话：
+                    </td>
+                    <td>
+                        <input name="mobile" id="iphone" placeholder="推荐使用手机号" type="text">
+                        或固定电话：
+                        <input placeholder="电话号码" name="call" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input class="but-a" type="submit" value="确认并设为您的默认地址" style="line-height: 40px; background-color: #f08200;color: #fff;display: inline-block;border-radius: 5px;">
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+<!--出现新增地址-->
+    <div class="address-total" style="display: none">
+
+
+        <div class="address-a-total" >
+            <div class="address-add">
+            <table>
+                <tbody><tr>
+                    <td>
+                        <span>*</span>
+                        收货人姓名：
+                    </td>
+                    <td>
+                        <input type="text" placeholder="收货人姓名" value="" name="username" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>*</span>
+                        所在地区：
+                    </td>
+                    <td>
+                        <select id="province1" class="province"
+                                name="province_id">
+                            <option value="0" selected>请选择</option>
+
+                        </select>
+                        <select id="city_add1" class="city_add" name="city_id">
+                            <option value="">请选择市</option>
+                        </select>
+                        <select id="area1" class="area" name="area_id">
+                            <option value="">请选择区域</option>
+                        </select>
+                    </td>
+                    <input type="hidden" name="province" value="">
+                    <input type="hidden" name="city" value="">
+                    <input type="hidden" name="area" value="">
+                </tr>
+                <tr>
+                    <td>
+                        <span>*</span>
+                        详细地址：
+                    </td>
+                    <td>
+                        <input name="detail" placeholder="用于接收货物的详细地址" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>*</span>
+                        联系电话：
+                    </td>
+                    <td>
+                        <input name="mobile" id="iphone1" placeholder="推荐使用手机号" type="text">
+                        或固定电话：
+                        <input placeholder="电话号码" name="call" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="radio">设为常用地址
+                        <br>
+                        <br>
+                        <br>
+                        <input class="address-return" type="submit"  value="返回" style="color: white;outline: none">
+                        <input class="address-submit" type="submit"  value="保存" style="margin-left: 100px">
+                </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </div>
+    <!--新增地址-->
+    <div class="address-list" style="display: none">
+   <div class="address-new" >
+       <h3>收货地址</h3>
+       <p>使用新地址</p>
+   </div>
+     <ul>
+
+        <li >
+            <div class="left">
+                <input type="radio" value="369" address_id="526" onclick="is_city(526)" name="address_id"  checked  >
+                撒地方&nbsp;
+                辽宁省&nbsp;锦州市&nbsp;义县&nbsp;撒地方
+
+                <span>默认地址</span>
+            </div>
+            <div class="right">
+
+                <a href="javascript:;" class="update" snid="369">修改</a>
+                <a href="javascript:;" class="del" snid="369">删除</a>
+            </div>
+        </li>
+
+        <li >
+            <div class="left">
+                <input type="radio" value="371" address_id="3242" onclick="is_city(3242)" name="address_id"  >
+                超声波的&nbsp;
+                香港特别行政区&nbsp;香港特别行政区&nbsp;中西区&nbsp;时宽度没法看
+            </div>
+            <div class="right">
+                <a href="javascript:;" class="default" snid="371">设为默认地址</a>
+
+                <a href="javascript:;" class="update" snid="371">修改</a>
+                <a href="javascript:;" class="del" snid="371">删除</a>
+            </div>
+        </li>
+
+
+    </ul>
+        <a class="address-down" href="javascript:;">
+            展开其他地址
+
+
+            <img src="../img/积分商城/down_01.png" height="11" width="12"/></a>
+        <a class="address-up" href="javascript:;">
+            收起地址
+
+            <img src="../img/积分商城/up_01.png" height="11" width="12"/></a></div>
+
+
+    <div class="order-goods-info order-2 cat-goods">
+        <input type="hidden" value="16" class="shop_id">
+        <input type="hidden" value="50" class="freeshipp">
+        <h3 style="margin: 20px 0;font-size: 23px" >商品信息</h3>
+        <table>
+            <tbody>
+            <tr>
+                <th>家庭维修</th>
+                <th>规格</th>
+                <th>数量</th>
+                <th>单价</th>
+                <th>金额</th>
+            </tr>
+            <!-- 商品循环 -->
+
+
+            <tr>
+                <td><div class="confirm-img">
+                    <img src={{product.imgSrc}}>
+                </div>
+                    <div class="confirm-text" ng-bind="product.tradeName"></div>
+                </td>
+                <td>                                                无
+                </td>
+                <td class="goods-num count">
+                    <div class="trans-num">
+                        <a href="javascript:;" class="sub">-</a>
+                        <div class="num" style="margin: 0;width: 50px;float: left;">
+                            <input  type="text" class="num" value="1"/>
+                        </div>
+                        <a href="javascript:;" class="add" >+</a>
+                    </div>
+                    <input  type="hidden" value="">
+                    <input  type="hidden" value="">
+                </td>
+                <td class="price">¥<span class="list-unit-price" ng-bind="product.price"></span></td>
+                <td class="total">¥<span class="list-total-price">0</span></td>
+            </tr>
+            <!-- 商家统计 -->
+            <tr>
+                <td colspan="5">
+                    运费<span>¥<span class="postage-price">0</span></span>
+                    商品金额<span>¥<span class="class-total-price">0</span></span>
+                    商品合计<span>¥<span class="total-price">0</span></span>
+                </td>
+            </tr>
+            </tbody></table>
+    </div>
+
+    <div class="invoice">
+        <h3>开票信息</h3>
+        <div class="text">
+            发票抬头：
+            <input type="text" name="invoice_title[16]">
+            <span>*</span>
+            请填写后认真核对发票信息
+        </div>
+    </div>
+    <div class="remark">
+        <h3>添加订单备注</h3>
+        <input placeholder="限45字，请填写有关商品、支付、发票等信息" type="text" >
+    </div>
+
+
+    <div class="cirida" >
+        <h4>次日达·礼拜五专享</h4>
+        <div class="time">
+            选择送达时间：
+            <span>2017-11-04<span id="times">10:00 - 11:00</span></span>
+            <span class="time-1">
+                    <img src="../img/积分商城/time.png" height="22" width="21"/>
+                    点击修改
+                </span>
+        </div>
+        <div class="time-2">
+            <table style="margin-left: 225px;">
+                <tbody><tr>
+                    <td class="active">10:00 - 11:00</td>
+                    <td>11:00 - 12:00</td>
+                    <td>12:00 - 13:00</td>
+                    <td>13:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 15:00</td>
+                    <td>15:00 - 16:00</td>
+                    <td>16:00 - 17:00</td>
+                    <td>17:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>18:00 - 19:00</td>
+                    <td>19:00 - 20:00</td>
+                    <td>20:00 - 21:00</td>
+                    <td>21:00 - 22:00</td>
+                </tr>
+                <input type="hidden" name="time" id="cirida_time" value="10:00 - 11:00">
+                </tbody></table>
+            <div>
+                <a class="but-a" href="javascript:;">取消</a>
+                <a class="but-a friday_time" href="javascript:;">确定</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="order-submit order-submit-2">
+        <h3>实付金额：<span>¥<bb id="final-price">0</bb></span></h3>
+        <h4>订单完成后可获得积分：<span><bb id="jifen">0</bb>积分</span></h4>
+        <a ui-sref="contentpay" >提交订单</a>
+
+
+</div>
+
+</div>

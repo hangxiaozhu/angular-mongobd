@@ -1,0 +1,144 @@
+ul{
+		list-style: none;
+	}
+.store .swiper-container {
+				max-width: 1920px;
+				min-width: 1280px;
+				height: 500px;
+				margin: auto;
+			}
+			.store .swiper-slide {
+				text-align: center;
+				font-size: 30px;
+				width: 1920px;
+				height: 500px;
+			}
+			.store .slide1 img {
+				width: 1920px;
+				height: 500px;
+			}
+			.store .slide2 img {
+				width: 1920px;
+				height: 500px;
+			}
+			.store .slide3 img {
+				width: 1920px;
+				height: 500px;
+			}
+			.store .slide4 img {
+				width: 1920px;
+				height: 500px;
+			}
+			.store .slide5 img {
+				width: 1920px;
+				height: 500px;
+			}
+			.store .swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
+				text-align: center;
+				border-radius: 50%;
+				background: blueviolet;
+			}
+			.swiper-container .swiper-button-prev {
+				left: 50px;
+				background-image: url("");
+			}
+			.swiper-container .swiper-button-prev img {
+				width: 60px;
+				height: 60px;
+			}
+			.swiper-container .swiper-button-next {
+				right: 50px;
+				background-image: url("");
+			}
+			.swiper-container .swiper-button-next img {
+				width: 60px;
+				height: 60px;
+			}
+			.swiper-container .swiper {
+				width: 100px;
+				height: 100px;
+			}
+			.swiper-container .swiper:hover {
+				background: url("../img/首页/jiantou2.png") no-repeat;
+				background-size: 60px 60px;
+			}
+			.swiper-container .swipers {
+				width: 100px;
+				height: 100px;
+				float: right;
+				margin-right: -30px;
+			}
+			.swiper-container .swipers:hover {
+				background: url("../img/首页/jiantou3.png") no-repeat;
+				background-size: 60px 60px;
+			}
+			
+
+.homethstore ul{
+				margin: 0 auto;
+				margin-top: 20px;
+				width: 1280px;
+				height: 440px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.homethstore ul li:hover{
+				border:1px solid green;
+			}
+			.homethstore ul li {
+				display: inline-block;
+				text-align: center;
+				width: 300px;
+				height: 435px;
+				border:1px solid #F8F6F7;
+			}
+			.homethstore ul li img {
+				margin-top: 10px;
+				width: 280px;
+				height: 280px;
+			}
+			.homethstore ul li .bign {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+			.homethstore ul li .smaln {
+				display: inline-block;
+				width: 280px;
+				height: 30px;
+				color: #666666;
+				font-size: 16px;
+				line-height: 30px;
+				margin-bottom: 10px;
+			}
+			.homethstore ul li .score{
+				color: #666666;
+				font-size: 18px;
+				margin-right: 20px;
+			}
+			.homethstore ul li .num{
+				color:#F78328;
+				font-size: 18px;
+				margin-right: 30px;
+			}
+			
+			.homethstore ul li .pp {
+				color: #666666;
+				font-size: 18px;
+			}
+			.homethstore ul li .price {
+				color: #666666;
+				font-size: 18px;
+			}
+			.homethstore ul li .convert{
+				line-height: 30px;
+				width: 100px;
+				height: 30px;
+				color: white;
+				margin-top: 10px;
+				margin-left: 95px;
+				background: #F78328;
+				border-radius:25% ;
+			}
+			

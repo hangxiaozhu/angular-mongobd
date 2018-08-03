@@ -1,0 +1,68 @@
+<div class="server-wrap">
+    <div class="server-add">
+        <span>您的当前位置:</span>
+        <a href="">首页</a>
+        <span>></span>
+        <span ng-bind="des"></span>
+
+    </div>
+    <div class="server-info">
+        <div class="server-left">
+            <img src={{photo}} alt="" id="server-small">
+            <div id="server-zoom"></div>
+        </div>
+        <div class="server-big">
+            <img src={{photo}} alt="">
+        </div>
+        <div class="server-right">
+            <div class="server-content">
+                <h3 ng-bind="type"></h3>
+                <p><img src="../img/同城/汽车维修/shop_time.png" alt=""><span>营业时间:&nbsp;&nbsp;</span><span ng-bind="time"></span><span class="server-sv" ng-bind="price"></span></p>
+                <p><img src="../img/同城/汽车维修/shop_phone.png" alt=""><span ng-bind="phone"></span></p>
+                <p><img src="../img/同城/汽车维修/shop_address.png" alt=""><span ng-bind="address"></span></p>
+                <h5>商家公告</h5>
+                <p>礼拜五为您提供优质服务！</p>
+
+            </div>
+            <div class="server-pingfen">
+                <div class="server-biaoqian">
+                    <h2>合作</h2>
+                    <h2>商家</h2>
+                </div>
+                <div class="server-zh">
+                    <span>综合评分:</span>
+                    <div></div>
+                    <span>5分</span>
+                </div>
+                <ul>
+                    <li><h5>描述</h5><span ng-bind="server"></span></li>
+                    <li><h5>商品</h5><span ng-bind="shop"></span></li>
+                    <li><h5>服务</h5><span ng-bind="descript"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="server-title">
+    <span>分类</span>
+        <a href="" class="server-click" ng-click="giveAll()">全部</a>
+        <a href="" ng-repeat="x in cityType" ng-bind="x.type" ng-click="giveType($index,x)" ></a>
+
+    </div>
+    <div class="server-good">
+        <ul>
+            <li ng-repeat="x in cityInfo" ui-sref="handlens({discounts:x.oldPrice, price:x.price, tradeName:x.name, imgSrc:x.img})">
+                <img src={{x.img}} alt="">
+                <div class="server-gn">
+                    <h4 ng-bind="x.name"></h4>
+                    <h5 ng-bind="x.detail"></h5>
+                    <div class="server-gi">
+                        <span ng-bind="x.price"></span>
+                        <span ng-bind="x.oldPrice"></span>
+                        <img src="../img/同城/搬家服务/img_62.png" alt="">
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

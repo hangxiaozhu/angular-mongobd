@@ -1,0 +1,105 @@
+
+		<div class="login-content">
+			<div class="login-log">
+				<div class="login-wrap">
+					<div class="login-top">
+						<span>登录</span>
+						<a ui-sref="login">手机验证码登录<img src="../img/登录注册/礼拜五 | 礼拜五_files/phone-icon.png" alt="" /></a>
+					</div>
+					<div class="login-contentr">
+						<input type="text" placeholder="请输入手机号" id="username"/><br />
+						<input type="password" placeholder="请输入密码" id="psd"/><br /><img src="../img/首页/pwd.png" />
+						<input type="text" placeholder="验证码" id="verifyCode"/>
+
+					</div>
+					<div id="v_container"></div>
+					<div class="login-state">
+						<div class="c-bar">
+							<input type="checkbox" name="autologin" id="checkboxs" /><label for="checkboxs">自动登录</label>
+						</div>
+						<a class="forget-ps" ui-sref="login">忘记密码?</a>
+					</div>
+					<div class="login-bottom">
+						<a ui-sref="login"><input type="submit" value="登录" class="login-btn1 user-btn1" /></a>
+						<a ui-sref="login"><input type="submit" value="会员注册" class="login-btn2" /></a>
+
+					</div>
+					<div class="login-point">
+						<p>提示：未注册的用户将直接注册为礼拜五用户</p>
+					</div>
+				</div>
+			</div>
+			<div class="register">
+				<div class="r-wrap">
+					<div class="register-top">注册</div>
+					<div class="register-content">
+						<input type="text" placeholder="请输入手机号" id="iphone" /><br />
+						<input type="password" placeholder="请输入密码（6-20位号码字符）" id="password" /><br />
+						<input type="text" placeholder="验证码" id="login-yan"/><br />
+						<div class="yanzheng">
+							<input type="text" placeholder="请输入手机验证码" id="login-iyan"/><a href="###">手机验证码</a>
+						</div>
+					</div><br />
+					<div class="register-read">
+						<input type="checkbox" id="index-agree"/> 我已阅读并同意
+						<a href="">《礼拜五用户使用协议》</a>
+					</div>
+					<div class="register-bottom">
+						<a ui-sref="login"><input type="submit" value="注册" class="login-btn1" /></a>
+						<a ui-sref="login"><input type="submit" value="登录" class="login-btn2" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="iphone">
+				<div class="iphone-wrap">
+					<div class="iphone-top">
+						<span>登录</span>
+						<a ui-sref="login">账号登录<img src="../img/登录注册/icon.png" alt="" /></a>
+					</div>
+					<div class="iphone-contentr">
+						<input type="text" placeholder="请输入手机号" id="iphone1"/><br />
+						<input type="text" placeholder="验证码" id="password1"/><br />
+						<div class="i-yan">
+							<input type="password" placeholder="请输入手机验证码" /><a href="###">手机验证码</a>
+						</div>
+
+					</div>
+					<div class="iphone-state">
+						<div class="c-bar">
+							<input type="checkbox" name="autologin" id="checkboxs" /><label for="checkboxs">自动登录</label>
+						</div>
+						<a  class="forget-ps" ui-sref="login">忘记密码?</a>
+					</div>
+					<div class="iphone-bottom">
+						<a><input type="submit" value="登录" class="login-btn1 phone-btn1" /></a>
+						<a ui-sref="login"><input type="submit" value="会员注册" class="login-btn2" /></a>
+
+					</div>
+					<div class="iphone-point">
+						<p>提示：未注册的用户将直接注册为礼拜五用户</p>
+					</div>
+				</div>
+			</div>
+			<div class="forget">
+				<div class="forget-wrap">
+					<div class="forget-top">
+						<span>重置密码</span>
+					</div>
+					<div class="forget-content">
+						<input type="text" placeholder="请输入手机号" id="changeUser"/>
+						<input type="text" placeholder="验证码" id="verify"/>
+						<div class="forget-pw">
+							<input type="password" placeholder="请输入密码" id="changePsd1"/>
+							<img src="../img/首页/pwd.png" alt="" />
+						</div>
+						<input type="password" placeholder="请再次输入密码" id="changePsd2"/>
+						<div class="forget-y">
+							<input type="text" placeholder="请输入手机验证码" id="phoneVerify"/><a href="###">手机验证码</a>
+						</div>
+					</div>
+					<div class="forger-bottom">
+						<input type="submit" value="提交"/>
+					</div>
+				</div>
+			</div>
+		</div>

@@ -1,0 +1,203 @@
+
+      .sort .sort-location p {
+				text-decoration: none;
+				display: inline-block;
+	            height: 30px;
+	           line-height: 30px;
+				margin-left:13px;
+			}
+	.sort .sort-location{
+	line-height: 50px;
+	margin:20px auto;
+	width: 1280px;
+	height: 50px;
+background-color: #eeeeee;
+}
+
+.sort .sort-location span{
+	font-size: 15px;
+	color:#6A6A6A;
+	
+}
+.sort .sort-location .firstt{
+	margin-left:30px;
+}
+ .sort .sort-spp {
+	margin:0 auto;
+	width: 1280px;
+	display:block;	
+}
+.sort-sequence{
+	margin:0 auto;
+	width: 1280px;
+	height: 30px;
+	display:block;
+}
+.sort  span {
+	color:#6A6A6A;
+	font-size: 15px;
+}
+.sort-first p {
+	text-decoration: none;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 20px;
+	color:black;
+	font-size: 15px;
+}
+.sort-sec p {
+	text-decoration: none;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 20px;
+	color:black;
+	font-size: 15px;
+}
+.sort-first p:hover{
+	color:white;
+	background:#3F9444;
+}
+.sort-sec p:hover{
+	color:white;
+	background:#3F9444;
+}
+.sort-first {
+	height: 40px;
+	border-bottom:1px solid #DDDDDD;
+}
+.sort-first .us{
+		color:white;
+	    background: #3F9444;
+}
+.sort-uus{
+		color:white;
+	    background: #3F9444;
+}
+.sort-second {
+	margin-top:20px;
+	height: 40px;
+	border-bottom:1px solid #DDDDDD;
+	display: none;
+}
+ 
+ .sort-sec .sort-second .sort-rs{
+		color:white;
+	    background: #3F9444;
+}
+.sort-sec .sort-second .sort-rus{
+		color:white;
+	    background: #3F9444;
+}
+.sort-two {
+	visibility:hidden;
+	color:#6A6A6A;
+	font-size: 15px;
+}
+.sort-thire {
+	visibility:hidden;
+	color:#6A6A6A;
+	font-size: 15px;
+}
+.sort-sequence{
+	margin-top:20px
+}
+.sort-sequence p{
+	text-decoration: none;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 20px;
+	font-size: 15px;
+	color:#6A6A6A;
+	background:white;
+	border:1px solid #DDDDDD;
+}
+.sort-sequence p:hover{
+	color: #3F9444;
+	border:1px solid #3F9444;
+}
+.sort-sequence .sort-aa{
+	color: #3F9444;
+	border:1px solid #3F9444;
+}
+.sort-homeths ul{
+				margin: 0 auto;
+				margin-top: 20px;
+				width: 1280px;
+				flex-wrap: wrap;
+			}
+			.sort-homeths ul li:nth-child(2n+2) {
+				margin-left: 18.3px;
+			}
+			.sort-homeths ul li:nth-child(4n-1) {
+				margin-left: 18.3px;
+			}
+			.sort-homeths ul li:hover{
+				border:1px solid green;
+			}
+			
+			.sort-homeths ul li {
+				display: inline-block;
+				text-align: center;
+				width: 300px;
+				height: 435px;
+				background: white;
+				border:1px solid #DDDDDD;
+				margin-bottom: 20px;
+			}
+			.sort-homeths ul li img {
+				margin-top: 10px;
+				width: 280px;
+				height: 300px;
+			}
+			.sort-homeths ul li p {
+				position: relative;
+				width: 300px;
+				height: 30px;
+				font-size: 20px;
+				margin-top: 20px;
+				margin-bottom: 30px;
+				width: 100%;
+			}
+			.sort-homeths ul li .sort-pp {
+				color:#F88D3A;
+				font-size: 20px;
+			}
+			.sort-homeths ul li .sort-non {
+				color:black;
+				font-size: 16px;
+				margin-right:30px;
+				text-decoration: line-through;
+			}
+			.sort-homeths ul li .sort-price img {
+				width: 25px;
+				height: 20px;
+				margin-left: 110px;
+				cursor:pointer;
+			}
+			.sort-btn {
+				width: 1280px;
+				margin: 0 auto;
+				text-align: center;
+			}
+	  .sort-btn button {
+		  padding: 10px;
+		  margin: 5px;
+		  background-color: silver;
+		  color: white;
+		  font-size: 18px;
+		  border: none;
+		  outline: none;
+		  border-radius: 5px;
+	  }
+	  .sort-btn .btn-primary{
+	background: red;
+}

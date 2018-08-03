@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>礼拜五</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/home.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/city.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/friday.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/integralStore.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../css/special.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/protect.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/monitor.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myCenter.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myAcc.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myOder.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myScore.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/scoreOder.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/meMoney.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/fillCar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/mySelf.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/address.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/changePw.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sort.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/myinfo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/handlens.css"/>
+		<link rel="stylesheet" href="../css/shopCar.css">
+		<link rel="stylesheet" href="../css/confirm.css">
+		<link rel="stylesheet" href="../css/contentpay.css">
+		<script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/gVerify.js"></script>
+		<script src="../js/swiper.min.js" type="text/javascript"></script>
+		<script src="../js/angular.min.js" type="text/javascript"></script>
+		<script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.min.js" type="text/javascript"></script>
+		<script src="../js/index.js" type="text/javascript"></script>
+		<script src="../js/home.js" type="text/javascript"></script>
+		<script src="../js/city.js" type="text/javascript"></script>
+		<script src="../js/integralStore.js" type="text/javascript"></script>
+		<script src="../js/login.js" type="text/javascript"></script>
+		<script src="../js/myCenter.js" type="text/javascript"></script>
+		<script src="../js/myOder.js" type="text/javascript"></script>
+		<script src="../js/myMoney.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/sort.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/filters.js"></script>
+		<script src="../js/adress.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shopCar.js"></script>
+		<script src="../js/city-server.js"></script>
+		<script src="../js/handlens.js"></script>
+		<script src="../js/new-address.js"></script>
+		<script src="../js/showadd.js"></script>
+		<script src="../js/changeAddress.js"></script>
+		<script src="../js/confirm.js"></script>
+		<script src="../js/contentpay.js"></script>
+		<script src="../js/myCollect.js"></script>
+	</head>
+
+	<body ng-controller="mainCtrl">
+		<div class="index-header">
+			<div class="index-zhe">
+				</div>
+				<div class="index-zhao">
+					<p>请选择你的收货地址:</p>
+					<select id="sheng">
+				<option>请选择省</option>
+			</select><span>省</span>
+			<select id="shi">
+				<option>请选择市</option>
+			</select><span>市</span>
+			<select id="xian">
+				<option>请选择县/区</option>
+			</select><span>县</span>
+			<br />
+				<input type="submit" name="" id="" value="确定" />
+				
+			</div>
+			<div class="index-success">
+				<p>定位成功</p>
+			</div>
+			<div class="index-top">
+				<div class="index-top-cont">
+					<span>所在城市:</span>
+					<span class="index-city" style="cursor: pointer;">北京市</span><img src="../img/首页/img_06.png"/>
+					<div class="index-top-cont-right">
+						<a ng-if="!login" ui-sref="login" class="index-login" ng-click="indexLogin()">登录</a>
+						<a ng-if="login" ui-sref="myCenter.myAcc">你好,{{username}}</a>
+						<a ng-if="!login" ui-sref="login" class="index-register"ng-click="indexRegister()">注册</a>
+						<a ng-if="login" href="" ui-sref="home" ng-click="exit()">退出</a>
+						<a ng-click="myIndent()">我的订单</a>
+						<a ng-click="myInfo()">我的消息</a>
+						<a href="###">我是商家</a>
+						<img src="../img/首页/img_03.png" height="16" width="16"/>
+						<span>400-800-8820</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="index-bottom">
+				<div class="index-bottom-cont">
+					<div class="index-bottom-logo" id="index-logo">
+						<a ui-sref="home"><img src="../img/首页/logo.png" height="67" width="370"/></a>
+					</div>
+					<div class="index-title">
+				<span>会员登录</span>
+			</div>
+					<div class="index-bottom-search index-on">
+						<div>
+							<input type="text" placeholder="请输入关键字进行搜索">
+							<span><a ui-sref="sort" id="search"><img src="../img/首页/search.png" height="20" width="20"/></a></span>
+						</div>
+						<span>热门:</span>
+						<span>奇异果</span>
+						<span>牛排</span>
+						<span>山竹</span>
+						<span>牛油果</span>
+					</div>
+					<div class="index-bottom-myCen index-on">
+						<a ng-click="myCenter()"><img src="../img/首页/img_17.png" height="16" width="16"/>个人中心</a>
+						<a ng-click="shopCar()" class="shop-click"><img src="../img/首页/img_20.png" height="16" width="18"/><span id="shopCarShu" ng-bind="shopCarShu"></span>购物车</a>
+					</div>
+				</div>
+			</div>
+			<div class="index-nav">
+				<span>全部分类<img src="../img/首页/img_26.png" height="10" width="15"/></span>
+				<a class="index-nav-active" ui-sref="home"><span>首页</span></a><a ui-sref="city"><span>同城</span></a><a ui-sref="friday"><span>礼拜五</span></a><a ui-sref="integralStore"><span>积分商城</span></a>
+				<ul>
+					<li ng-click="sortC1($index,x)" ng-repeat="x in category0" ng-mouseenter="indexME($index,x)" ng-mouseleave="indexML($index,x)">
+						<a ui-sref="sort"><img src="../img/首页/1499328700168.jpg" height="30" width="30"/><span ng-bind="x"></span></a>
+
+					</li>
+					<div class="index-nav-classify">
+						<div ng-repeat="a in categoryE0" ng-click="sortC2($index,a)"><a ui-sref="sort" ng-bind="a"></a></div>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<div ui-view></div>
+
+		<div class="index-about">
+			<div class="index-about-top">
+				<div>
+					<a ui-sref="protect"><img src="../img/首页/1478224941507.jpg" height="45" width="44"/>优先保障</a><a ui-sref="monitor"><img src="../img/首页/1478224996641.jpg" height="44" width="45"/>全程监控</a><a ui-sref="special"><img src="../img/首页/1478492037120.jpg" height="45" width="45"/>礼拜五特惠</a><a ui-sref="base"><img src="../img/首页/1478492203630.jpg" height="45" width="44"/>基地直供</a><a ui-sref="punctual"><img src="../img/首页/1478492235157.jpg" height="45" width="44"/>准时送达</a>
+				</div>
+			</div>
+			<div class="index-about-center">
+				<div>
+					<div class="index-about-center-left">
+						<img src="../img/首页/logo.png" height="67" width="370"/>
+						<p>服务时间 : 08 : 00-22 : 00 <img src="../img/首页/img_03.png" height="16" width="16"/><span>400-800-8820</span></p>
+					</div>
+					<div class="index-about-center-cen">
+						<div>
+							<img src="../img/首页/1478491712787.jpg" height="130" width="132"/>
+							<p>礼拜五官方微信</p>
+						</div>
+						<div>
+							<img src="../img/首页/1478491712787.jpg" height="130" width="132"/>
+							<p>礼拜五APP</p>
+						</div>
+					</div>
+					<div class="index-about-center-right">
+						<ul>
+							关于礼拜五
+							<li><a ui-sref="newuser">新用户注册</a></li>
+							<li><a href="###">在线下单</a></li>
+						</ul>
+						<ul>
+							配送说明
+							<li><a href="###">运费说明</a></li>
+							<li><a href="###">发票说明</a></li>
+						</ul>
+						<ul>
+							售后服务
+							<li><a href="###">退换货说明</a></li>
+							<li><a href="###">服务保障承诺</a></li>
+						</ul>
+						<ul>
+							加盟礼拜五
+							<li><a href="###">加盟条款</a></li>
+							<li><a href="###">公司简介</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="index-about-bottom">
+				<div>
+					<p>版权所有 @ 礼拜五 保留所有权利 | 沪ICP备12042163</p>
+					<p>礼拜五 纵享品质</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

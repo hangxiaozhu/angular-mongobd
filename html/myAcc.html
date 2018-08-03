@@ -1,0 +1,24 @@
+<div class="my-acc">
+				<div class="acc-top">
+					<div class="acc-t1">
+						<img src="../img/登录注册/photo.png"/>
+					</div>
+					<div class="acc-t2">
+						<p>你好 <span ng-bind="username"></span></p>
+					</div>
+					<div class="acc-t3">
+						<p>当前积分<span>0</span></p>
+					</div>
+					<div class="acc-t4">
+						<p>我的钱包<span ng-bind="myAcc.wallet | currency:'¥'"></span></p>
+					</div>
+					<div class="acc-t5">
+						<a ui-sref="myCenter.myMoney">充值有礼 >></a><br />
+						<a ui-sref="myCenter.fillCar">充值卡兑换 >></a>
+						
+					</div>
+				</div>
+				<div class="acc-bottom">
+					<img src="../img/登录注册/background.jpg" alt="" />
+				</div>
+			</div>

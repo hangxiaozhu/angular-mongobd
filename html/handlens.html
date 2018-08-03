@@ -1,0 +1,104 @@
+	<div class="lens-box">
+		<div class="lens-top">
+			<span>您的当前位置:</span>
+			<span style="cursor: pointer" ui-sref="home">首页&nbsp;></span>
+			<span>全部商品&nbsp;></span>
+			<span ng-bind="product.tradeName"></span>
+		</div>
+	<div class="lens-wrap">
+		
+			<!--左侧小图区域-->
+			<div class="lens-small">
+				<img src={{product.imgSrc}} alt="" id="small-img"/>
+				<img src={{product.imgSrc}} alt="" id="small-img1"/>
+				<!--放大镜区域-->
+				<div id="zoom"></div>
+			</div>
+			
+			
+			<!--右侧大图区域-->
+			
+			<div class="lens-big">
+				<img src={{product.imgSrc}} alt="" id="big-img"/>
+			</div>
+			
+			<div class="lens-right">
+				<h3 ng-bind="product.tradeName"></h3>
+				<div class="r-content">
+				<p>
+				<span>自营</span>
+				<span>全国+次日达</span>
+				</p>
+				<img src="../img/海鲜水产/default.png"/>
+				<h4>资深玩家</h4>
+				</div>
+				<div class="price">
+				<span>现价：{{product.price | currency:'¥'}}</span>
+				<span>原价：{{product.discounts | currency:'¥'}}</span>
+				</div>
+				<div class="lens-num">
+					<span>数量：</span>
+					<div class="lens-jian"><span id="minus">-</span><input type="text" value="1" id="lens-nums" /><span id="add">+</span></div>
+						<span>件</span>
+					<a href="###" class="lens-join" ng-click="addShopCar(product)">加入购物车</a><a ui-sref="confirm({imgSrc:product.imgSrc,tradeName:product.tradeName,price:product.price})" class="lens-mai" ng-click="buyNow(product)">立即购买</a>
+					 <div class="icon">
+					 	<div class="icon-click" ng-click="myCollect()">
+					 	<span class="sprite"></span><span>收藏此商品</span><span>分享到：</span></div>
+					<div class="logos bdsharebuttonbox">
+					<a href="" class="w1 bds_more" data-cmd="more"></a>
+					<a href="" class="w2 bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+					<a href="" class="w3 bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="" class="w4 bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="" class="w5 bds_renren" data-cmd="renren" title="分享到人人网"></a>
+					<a href="" class="w6 bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+					</div>
+					</div>
+				</div>
+			</div>	
+			<div class="lens-bottom">
+			<div class="l-come"><img src="../img/海鲜水产/prev.png"/></div>	
+			<div class="l-show">
+			<ul>
+				<li><img src={{product.imgSrc}} alt="" /></li>
+				<li><img src={{product.imgSrc}} alt="" /></li>
+			</ul>
+			</div>
+			<div class="l-next"><img src="../img/海鲜水产/next.png"/></div>
+		</div>
+		<div class="lens-foot">
+		<div class="lens-title">
+		<a href="">商品详情</a>
+		<a href="">商品评价</a>
+		</div>
+		<div class="lens-content">
+		<ul>
+			<li>
+			<div class="xq-left">
+			<img src="../img/蛋奶速食/default_head.png"/>
+			<p>136***666</p>
+			</div>
+			<div class="xq-right">
+				<span class="xiaoliu"></span>
+				<span class="star-group">2017-07-23 15:45:50</span>
+				<p ng-bind="product.tradeName"></p>
+			</div>
+			</li>
+			<li>
+			<div class="xq-left">
+			<img src="../img/蛋奶速食/default_head.png"/>
+			<p>yf2***666</p>
+			</div>
+			<div class="xq-right">
+				<span class="xiaoliu"></span>
+				<span class="star-group">2017-07-23 15:51:58</span>
+				<p>好吃的不得了</p>
+			</div>
+			</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+	</div>
+	<script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+

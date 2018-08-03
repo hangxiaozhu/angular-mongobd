@@ -1,0 +1,60 @@
+.cpw-wrap {
+	width: 100%;
+	height: 100%;
+}
+.cpw-top {
+	padding-left: 20px;
+	line-height: 60px;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+.cpw-top h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+.cpw-form{
+	width: 350px;
+	margin: 40px;
+	height: 371px;
+}
+.cpw-form input{
+	width: 300px;
+	height: 45px;
+	font-size: 14px;
+	border: 1px solid#D3D3D3;
+	background-color: #F9F9F9;
+	padding: 0 10px;
+	line-height: 45px;
+}
+.cpw-form ul{
+	width: 100%;
+	height: 371px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.getiphone{
+	position: relative;
+}
+.getiphone a{
+	position: absolute;
+	top: 10px;
+	right: 40px;
+	width: 100px;
+	background-color: #498E3D;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+#pw-post{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 10px;
+	border: none;
+	color: white;
+	background-color: #F08200;
+	font-size: 18px;
+	border-radius: 5px;
+}

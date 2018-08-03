@@ -1,0 +1,17 @@
+<div class="shouchang-wrap">
+	<div class="sc-top">
+		<h3>我的收藏</h3>
+	</div>
+	<div class="sc-show">
+	<ul>
+		<li ng-repeat="x in myCollect">
+			<a ui-sref="handlens({discounts:x.discounts, price:x.price, tradeName:x.tradeName, imgSrc:x.imgSrc})"><img src={{x.imgSrc}}/></a>
+			<p ng-bind="x.tradeName"></p>
+			<span class="sort-pp" ng-bind="x.price | currency:'¥'"></span>
+			<span class="sort-non" ng-bind="x.discounts | currency:'¥'"></span>
+			<span class="sort-price"><img src="../img/海鲜水产/img_62.png"/></span>
+			<span class="cancel-collect" ng-click="removeCtrl(x,$event)" >取消收藏</span>
+		</li>
+	</ul>
+	</div>
+</div>

@@ -1,0 +1,411 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.login-content{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: url(../img/首页/1477534750704.jpg),no-repeat;
+	overflow: hidden;
+}
+
+.login-content .login-log{
+	position: absolute;
+	right: 321px;
+	height: 100%;
+	width: 387px;
+	background: white;
+	border-bottom: 1px solid #dddddd;
+	/*display: none;*/
+}
+.login-wrap{
+	height: 80%;
+	width: 90%;
+	margin: 50px auto;
+	position: relative;
+	/*border: 1px solid red;*/
+}
+.login-top{
+	display: flex;
+	justify-content: space-between;
+}
+.login-top img{
+	padding-left: 10px;
+	vertical-align: -2px;
+}
+.login-top a{
+	color: #4B943D;
+	font-size: 14px;
+}
+.login-contentr{
+	position: relative;
+	margin-top: 22px;
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.login-contentr input{
+	width: 98%;
+	height: 34px;
+	border: 1px solid #d3d3d3;
+	padding-left: 5px;
+	/*text-align: center;*/
+	background-color: #F9F9F9;
+	font-size: 14px;
+}
+.login-contentr img{
+	position: absolute;
+	width: 26px;
+	height: 15px;
+	right: 10px;
+	top: 75px;
+}
+.login-contentr input:last-child{
+	width: 30%;
+}
+#v_container{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	margin-top: -50px;
+	width: 200px;
+	height: 50px;
+}
+.login-state{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-size: 12px;
+}
+.login-state a{
+	color: #ff6600;
+}
+.login-bottom{
+	width: 100%;
+	margin-top: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+.login-bottom a{
+	width: 45%;
+	height: 45px;
+}
+.login-bottom  input{
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 45px;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	
+}
+.login-bottom .login-btn1{
+	background-color: red;
+}
+.login-bottom .login-btn2{
+	background-color: green;
+}
+.login-point{
+	width: 100%;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 14px;
+}
+.login-point p{
+	width: 90%;
+}
+.register{
+	height: 100%;
+	width: 387px;
+	background: white;
+	overflow: hidden;
+	position: absolute;
+	right: 321px;
+	display: none;
+}
+.register .r-wrap{
+	height: 80%;
+	width: 90%;
+	margin: 50px auto;
+	
+	/*border: 1px solid ;*/
+	
+}
+.register-content{
+	width: 100%;
+	height: 40%;
+}
+.register-content input{
+	margin-top: 30px;
+	width: 98%;
+	height: 34px;
+	border: 1px solid #d3d3d3;
+	padding-left: 5px;
+	background-color: #F9F9F9;
+	font-size: 14px;
+}
+.register-content input:nth-child(5){
+	width: 30%;
+}
+.yanzheng{
+	/*height: 34px;*/
+	position: relative;
+	width: 100%;
+}
+.yanzheng a{
+	position: absolute;
+	bottom: 3px;
+	right: 2px;
+	color: white;
+	background:#4B943D;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	padding: 0 15px;
+}
+.r-wrap .register-read{
+	width: 100%;
+	overflow: hidden;
+	color: #999;
+	font-size: 12px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	margin-top: 85px;
+}
+.register-bottom{
+	width: 100%;
+	margin-top: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+.register-bottom a{
+	width: 45%;
+	height: 45px;
+}
+.register-bottom input{
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 45px;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+}
+.register-bottom .login-btn1{
+	background: red;
+}
+.register-bottom .login-btn2{
+	background: green;
+}
+.iphone{
+	position: absolute;
+	right: 321px;
+	height: 100%;
+	width: 387px;
+	background: white;
+	border-bottom: 1px solid red;
+	display: none;
+}
+.iphone-wrap{
+	height: 80%;
+	width: 90%;
+	margin: 50px auto;
+	/*border: 1px solid red;*/
+}
+.iphone-top{
+	display: flex;
+	justify-content: space-between;
+}
+.iphone-top img{
+	padding-left: 10px;
+	vertical-align: -2px;
+}
+.iphone-top a{
+	color: #4B943D;
+	font-size: 14px;
+}
+.iphone-contentr{
+	position: relative;
+	margin-top: 22px;
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.iphone-contentr input{
+	width: 98%;
+	height: 34px;
+	border: 1px solid #d3d3d3;
+	padding-left: 5px;
+	/*text-align: center;*/
+	background-color: #F9F9F9;
+	font-size: 14px;
+}
+.iphone-contentr img{
+	position: absolute;
+	width: 26px;
+	height: 15px;
+	right: 10px;
+	top: 75px;
+}
+.iphone-contentr input:nth-child(3){
+	width: 30%;
+}
+.iphone-state{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-size: 12px;
+}
+.iphone-state a{
+	color: #ff6600;
+}
+.iphone-bottom{
+	width: 100%;
+	margin-top: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+.iphone-bottom a{
+	width: 45%;
+	height: 45px;
+}
+.iphone-bottom  input{
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 45px;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	
+}
+.iphone-bottom  .login-btn1{
+	background-color: red;
+}
+.iphone-bottom .login-btn2{
+	background-color: green;
+}
+.iphone-point{
+	width: 100%;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 14px;
+}
+.iphone-point p{
+	width: 90%;
+}
+.i-yan{
+	width: 100%;
+	position: relative;
+	
+}
+.i-yan a{
+	position: absolute;
+	bottom: 3px;
+	right: 2px;
+	color: white;
+	background:#4B943D;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	padding: 0 15px;
+}
+.forget{
+	position: absolute;
+	right: 321px;
+	height: 100%;
+	width: 387px;
+	background: white;
+	border-bottom: 1px solid #dddddd;
+	display: none;
+}
+.forget-wrap{
+	height: 80%;
+	width: 90%;
+	margin: 50px auto;
+	/*border: 1px solid red;*/
+}
+.forget-content{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.forget-content input{
+	width: 98%;
+	height: 34px;
+	border: 1px solid #d3d3d3;
+	padding-left: 5px;
+	/*text-align: center;*/
+	background-color: #F9F9F9;
+	font-size: 14px;
+}
+.forget-content .forget-pw{
+	width: 100%;
+	position: relative;
+}
+.forget-pw img{
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	height: 15px;
+	right: 10px;
+	width: 25px;
+}
+.forget-y {
+	width: 100%;
+	position: relative;
+}
+.forget-y a{
+	position: absolute;
+	bottom: 3px;
+	right: 2px;
+	color: white;
+	background:#4B943D;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	padding: 0 15px;
+}
+.forget-content input:nth-child(2){
+	width: 30%;
+}
+.forger-bottom{
+	width: 100%;
+}
+.forger-bottom input{
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	color: white;
+	background:#ea5b0c;
+	font-size: 14px;
+	margin: 44px 0 10px;
+	line-height: 44px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+

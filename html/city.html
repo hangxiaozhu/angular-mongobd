@@ -1,0 +1,29 @@
+<div class="city-wrap">
+	<div class="city-lei">
+		<span>一级分类:</span>
+		<a href="###" class="lei-click" ng-click="getAll()">全部</a>
+		<a href="###" ng-click="getType($index,x)" class="lei-wei" ng-repeat="x in kind" ng-bind="x.type"></a>
+	</div>
+	<div class="city-content">
+		<ul>
+			<li ng-repeat="a in city" ui-sref="city-server()" ng-click="change(a)">
+				<img src={{a.src}}/>
+				<div class="city-text">
+				<h3 ng-bind="a.type"></h3>
+				<div class="city-think">
+					<img src="../img/同城/city-star.png" alt="" />
+					<img src="../img/同城/city-star.png" alt="" />
+					<img src="../img/同城/city-star.png" alt="" />
+					<img src="../img/同城/city-star.png" alt="" />
+					<img src="../img/同城/city-star1.png" alt="" />
+					<span ng-bind="a.price"></span>
+				</div>
+				<p>礼拜五商城</p>
+				</div>
+			</li>
+
+		</ul>		
+	</div>
+
+
+</div>

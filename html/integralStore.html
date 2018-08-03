@@ -1,0 +1,33 @@
+
+<div class="store">
+	<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide1">
+					<a href="###"><img src="../img/积分商城/1478499585756.jpg"/></a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev">
+				<div class="swiper">
+					<img class="one" src="../img/首页/jiantou.png" /></div>
+			</div>
+			<div class="swiper-button-next">
+				<div class="swipers"> <img class="one" src="../img/积分商城/rightjiantou.png" /></div>
+			</div>
+		</div>
+		
+		
+		<div class="homethstore">
+			<ul>
+				<li ng-repeat="b in data">
+					<img src={{b.src}}/>
+					<p class="bign">{{b.description}}</p>
+					<p class="smaln">{{b.description}}</p>
+					<span class="score">积分:</span><span class="num">{{b.jiFen}}</span>
+					<span class="pp">价值:</span><span class="price">¥{{b.price}}</span>
+					<p class="convert" style="cursor: pointer" ui-sref="handlens({discounts:b.jiFen, price:b.price, tradeName:b.description, imgSrc:b.src})">立即兑换</p>
+				</li>
+
+			</ul>
+		</div>
+</div>

@@ -1,0 +1,88 @@
+
+<div class="shop-gouwu">
+<div class="shop-img">
+    <a ui-sref="home">
+    <img src="../img/登录注册/gouwuche.png" height="110" width="121"/></a>
+<p>您的购物车是空的</p>
+<a ui-sref="home" class="shop-go"><span>去首页看看</span></a>
+</div>
+</div>
+<div class="shop-gou">
+<div class="shop-hide"></div>
+<div class="shop-png">
+    <a ui-sref="home"><img src="../img/首页/logo.png" height="67" width="370"/></a>
+    <div class="shop-step">
+        <span style="color:#F08200;">我的购物车</span>
+        <p>></p>
+        <span>确认订单信息</span>
+        <p>></p>
+        <span>订单提交成功</span>
+    </div>
+
+</div>
+<div class="shop-xian"></div>
+<div class="shop-car cart">
+    <h4>购物车</h4>
+
+
+    <div class="one-shop">
+     <div class="tt">
+         <table>
+            <tr>
+                <th class="inp">
+                    <input type="checkbox" class="goods-check ShopCheck" ng-change="ShopCheck()" ng-model="myValue">
+                </th>
+                <th><a href="">礼拜五生鲜</a></th>
+                <th>规格</th>
+                <th>数量</th>
+                <th>单价</th>
+                <th>金额</th>
+                <th>操作</th>
+            </tr>
+         </table>
+     </div>
+
+        <div class="ttr">
+            <table class="one-goods">
+                <tr class="goods-msg" ng-repeat="x in shopCarProduct">
+                    <th class="inp">
+                        <input type="checkbox" class="goods-check GoodsCheck" ng-click="GoodsCheck(x,$index)">
+                    </th>
+                    <th><a href=""><div class="goods-img">
+                        <img src={{x.imgSrc}} width="72" height="72"/>
+                    </div></a> <div class="goods-name" ng-bind="x.tradeName"></div></th>
+                    <th>无</th>
+                    <th><button type="button" class="minus" ng-click="minus(x)">-</button>
+                        <input type="text" class="am-num-text" value="1" />
+                        <button type="button" class="plus" ng-click="plus(x)">+</button></th>
+                    <th><p><span class="shop-total-amount GoodsPrice" ng-bind="x.price | currency:'¥'"></span></p></th>
+                    <th><p><span class="GoodsPrices" ng-bind="x.price | currency:'¥'"></span></p></th>
+                    <th class="delete" style="cursor: pointer" ng-click="delete(x.tradeName,$event)">删除</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 店铺合计 -->
+        <div class="shop-total">
+
+            <p>商品金额：￥<span class="shop-total-amount ShopTotal" ng-bind="heJiMoney"></span></p>
+        </div>
+    </div>
+
+<!-- 总计 -->
+<div class="all-total">
+    <label for="">
+        <input type="checkbox" class="goods-check" id="AllCheck">全选&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <span class="del" style="color: #4cae4c; cursor: pointer">批量删除</span>
+    <div class="fr">
+        <p>商品合计：￥<span class="shop-total-amount" id="AllTotal"  ng-bind="heJiMoney"></span></p>
+        <a ui-sref="confirm({heJiMoney:heJiMoney,tradeName:shopCarProduct.tradeName})">立即购买</a>
+    </div>
+</div>
+
+
+
+
+</div>
+
+</div>

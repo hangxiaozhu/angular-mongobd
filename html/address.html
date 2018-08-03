@@ -1,0 +1,30 @@
+<div class="address-wrap">
+	<div class="add-top">
+		<h3>地址管理</h3>
+		<a class="new-add" ng-click="addNews()">添加新地址</a>
+	</div>
+	<div class="add-news">
+		<ul>
+			<li>
+				<span>收货人</span>
+				<span>所在区域</span>
+				<span>街道地址</span>
+				<span>联系电话</span>
+				<span>操作</span>
+			</li>
+			<li ng-repeat="x in addRess">
+				<span ng-bind="x.name"></span>
+				<span ng-bind="x.sheng+x.city+x.county"></span>
+				<span ng-bind="x.detailed"></span>
+				<span ng-bind="x.liphone"></span>
+				<span><a ng-click="changeAddress(x,$index)" class="add-change">修改</a>|<a href="" class="add-remove" ng-click="deleteAdd($index,$event)">删除</a></span>
+			</li>
+		</ul>
+	</div>
+	<div class="add-none">
+		<img src="../img/个人中心/pencil.png" alt="">
+		<span>暂无收货地址，请点击</span>
+		<a href="###" class="new-add" ng-click="addNews()">添加新地址</a>
+	</div>
+
+</div>

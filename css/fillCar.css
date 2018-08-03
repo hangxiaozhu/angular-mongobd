@@ -1,0 +1,59 @@
+.fillcar-wrap{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.fc-top{
+	width: 90%;
+	padding-left: 20px;
+	line-height: 60px;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+}
+.fc-top h3{
+	width: 45%;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.fc-top h3:first-child{
+	float: left;
+	
+}
+.fc-top h3:last-child{
+	float: right;
+	text-align: right;
+}
+.fc-recharge{
+	margin: 50px 0 0 30px;
+}
+.fc-recharge input{
+	outline: none;
+	border: 1px solid #ddd;
+	width: 475px;
+	padding: 15px 20px;
+	font-size: 16px;
+}
+.fc-recharge a{
+	display: inline-block;
+	width: 150px;
+	line-height: 40px;
+	background-color:#F08200;
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+

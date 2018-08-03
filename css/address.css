@@ -1,0 +1,236 @@
+.address-wrap{
+	width: 100%;
+	height: 100%;
+}
+.add-top{
+	padding-left: 20px;
+	line-height: 60px;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+.add-top h3{
+	width: 45%;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+}
+.add-top a{
+	float: right;
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 3px 10px;
+	background-color: #498E3D;
+	color: white;
+	border-radius: 5px;
+	line-height: 25px;
+	margin: 15px 20px 0 0 ;
+}
+.add-news{
+	margin: 20px;
+}
+.add-news ul li {
+	line-height: 50px;
+}
+.add-news ul li:first-child{
+	border-top: none;
+	background:#F2F2F2;
+}
+.add-news ul li:hover{
+	background: antiquewhite;
+}
+.add-news ul li span{
+	display: inline-block;
+	text-align: center;
+}
+.add-news ul li span a{
+	cursor: pointer;
+}
+.add-news ul li span:first-child{
+	width: 100px;
+}
+.add-news ul li span:nth-child(2){
+	width: 300px;
+}
+.add-news ul li span:nth-child(3){
+	width: 300px;
+}
+.add-news ul li span:nth-child(4){
+	width: 120px;
+}
+.add-news ul li span:last-child{
+	width: 160px;
+}
+.add-news ul li .add-change{
+	color: #F08200;
+}
+.add-mews ul li .add-remove{
+	color:#4B943D;
+}
+.shouchang-wrap{
+	width: 100%;
+	height: 100%;
+}
+.sc-top{
+	padding-left: 20px;
+	line-height: 60px;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+.sc-top h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+.look-wrap{
+	width: 100%;
+	height: 100%;
+	
+}
+.look-top{
+	padding-left: 20px;
+	line-height: 60px;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+.look-top h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+.add-none{
+	margin-top: 260px;
+	text-align: center;
+}
+.add-none>img{
+	width: 30px;
+	height: 30px;
+	vertical-align: -9px;
+}
+.add-none span{
+	font-size: 18px;
+	color: #666;
+	margin: 0 10px;
+}
+.add-none a{
+	padding: 3px 10px;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+	line-height: 25px;
+	margin: 15px 20px 0 0;
+	font-size: 16px;
+}
+.add-new{
+	/*display: none;*/
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.add-new table {
+	/*border-top: solid 1px #ddd;*/
+	/*border-bottom: solid 1px #ddd;*/
+	width: 100%;
+}
+
+.add-new tr td:first-child {
+	width: 135px;
+	text-align: right;
+	line-height: 60px;
+	font-size: 18px;
+}
+
+.add-new tr td:first-child span {
+	color: #EF834D;
+}
+
+.add-new input {
+	padding: 5px 10px;
+	border: solid 1px #ddd;
+	font-size: 14px;
+}
+
+.add-new input[name='user_name'],
+.add-new input[name='address'] {
+	width: 460px;
+}
+
+.add-new input[name='phone'] {
+	width: 200px;
+}
+
+.add-new select {
+	border: solid 1px #ddd;
+	padding: 5px 10px;
+	width: 140px;
+	margin-right: 16px;
+	font-size: 14px;
+}
+
+.add-new .but-a {
+	padding: 0px 10px;
+	font-size: 16px;
+	margin: 20px 0;
+	width: 150px;
+}
+
+.often{
+	color: #666;
+}
+.add-change{
+	/*display: none;*/
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.add-change table {
+	/*border-top: solid 1px #ddd;*/
+	/*border-bottom: solid 1px #ddd;*/
+	width: 100%;
+}
+
+.add-change tr td:first-child {
+	width: 135px;
+	text-align: right;
+	line-height: 60px;
+	font-size: 18px;
+}
+
+.add-change tr td:first-child span {
+	color: #EF834D;
+}
+
+.add-change input {
+	padding: 5px 10px;
+	border: solid 1px #ddd;
+	font-size: 14px;
+}
+
+.add-change input[name='user_name'],
+.add-change input[name='address'] {
+	width: 460px;
+}
+
+.add-change input[name='phone'] {
+	width: 200px;
+}
+
+.add-change select {
+	border: solid 1px #ddd;
+	padding: 5px 10px;
+	width: 140px;
+	margin-right: 16px;
+	font-size: 14px;
+}
+
+.add-change .but-a {
+	padding: 0px 10px;
+	font-size: 16px;
+	margin: 20px 0;
+	width: 150px;
+}
+
+
+
+
+
+
+

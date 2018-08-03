@@ -1,0 +1,15 @@
+.church {
+	margin: 0 auto;
+	width: 1280px;
+}
+.church img:first-child {
+	width: 1280px;
+	height: 500px;
+	cursor: pointer;
+}
+.church img:last-child {
+	width: 1280px;
+	height: 500px;
+	cursor: pointer;
+}
+

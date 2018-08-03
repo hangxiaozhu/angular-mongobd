@@ -1,0 +1,96 @@
+.ms-wrap{
+	width: 100%;
+	height: 100%;
+}
+.ms-top{
+	padding-left: 20px;
+	line-height: 60px;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+.ms-top h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+.my-data{
+	margin: 40;
+	font-size: 18px;
+	height: 365px;
+}
+.my-data ul{
+	margin: 40px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.my-data li:first-child{
+	height: 90px;
+}
+.my-data li:first-child img{
+	width: 80px;
+	height: 80px;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+.my-data li{
+	height: 55px;
+	line-height: 55px;
+}
+.my-data li input{
+	padding: 3px 15px;
+	outline: none;
+	border:1px solid #ddd ;
+	background: #F4F4F4;
+	font-size: 18px;
+	
+}
+
+.my-data li span{
+	margin-left: 30px;
+}
+.my-data li:first-child span{
+	margin-left: 10px;
+}
+.my-data li label{
+	width: 30px;
+	padding: 0 20px 0 10px;
+}
+.my-data a{
+	color: #4B943D;
+	margin: 0 10px;
+}
+.my-data  li select{
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+	margin: 0 8px 0 10px;
+}
+
+#submit{
+	background: #f08200;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	margin: 0 100px;
+	text-align: center;
+	border-radius: 5px;
+	display: inline-block;
+	width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,350 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.city-wrap{
+	width: 100%;
+	border-top: 1px solid #bfbfbf;
+}
+.city-lei{
+	width: 1280px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bfbfbf;
+	height: 56px;
+	line-height: 56px;
+}
+.city-lei a{
+	margin-left: 20px;
+	padding: 5px 10px;
+	
+}
+.city-lei .lei-wei{
+	background-color: white;
+	color: black;
+}
+.city-lei .lei-click{
+	background-color: #4b943d;
+	color: white;
+}
+/*.city-lei a:nth-child(2){
+	
+	background-color: #4b943d;
+	color: white;
+}*/
+.city-lei a:hover{
+	background-color: #4b943d;
+	color: white;
+}
+
+.city-content ul{
+	width: 1280px;
+	margin: 0 auto 20px;
+	flex-wrap: wrap;
+}
+.city-content ul li p{
+	font-size: 14px;
+	color: #666;
+}
+.city-content ul li{
+	width: 303px;
+	height: 415px;
+	text-align: center;
+	background-color: #F8F6F7;
+	border: 1px solid #F8F6F7;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 20px;
+}
+.city-content ul li:hover{
+	border: 1px solid green;
+}
+.city-content ul li img{
+	width: 300px;
+	height: 300px;
+}
+.city-content ul li:nth-child(2n+2){
+	margin-left: 14px;
+}
+.city-content ul li:nth-child(4n-1){
+	margin-left: 14px;
+}
+.city-content ul li .city-think img{
+	width: 20px;
+	height: 21px;
+}
+.city-content ul li .city-think span{
+	margin-left: 10px;
+	color: #EB691E;
+}
+.city-content #city-last{
+	display: flex;
+	justify-content: flex-start;
+}
+.city-content li h3{
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.city-content .city-text p{
+	margin-top: 10px;
+}
+.server-wrap{
+	width: 100%;
+	height: 100%;
+}
+.server-add{
+	width: 1280px;
+	height: 55px;
+	padding-left: 20px;
+	margin: 20px auto 0;
+	line-height: 55px;
+	background-color:#F4F4F4;
+}
+.server-info{
+	border-bottom: 1px solid #ddd;
+	margin: 20px auto 0;
+	width: 1280px;
+	/*height: 760px;*/
+	position: relative;
+	overflow: hidden;
+
+}
+.server-left {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	display: inline-block;
+}
+.server-left img{
+	width: 500px;
+	height: 250px;
+}
+
+
+
+
+#server-zoom {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	background: url(../img/蛋奶速食/background.png);
+	display: none;
+}
+
+.server-big {
+	position: absolute;
+	left: 550px;
+	top: 0;
+	width: 300px;
+	height: 300px;
+	display: none;
+	/*右侧内容超出隐藏*/
+	overflow: hidden;
+	z-index: 1;
+}
+.server-right{
+	position: absolute;
+	/*padding-left: 40px;*/
+	width: 750px;
+	height: 350px;
+	left: 550px;
+	top: 0;
+
+}
+.server-content{
+	width: 400px;
+}
+.server-content h3{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	font-size: 24px;
+}
+.server-content span{
+	padding-left: 25px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #666;
+}
+.server-content .server-sv{
+	padding-left: 10px;
+	color: #F5AA51;
+	font-size: 18px;
+}
+.server-content h5{
+	padding-top: 30px;
+	border-top: 1px solid #ddd;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.server-content p:last-child{
+	line-height: 30px;
+	color:#666;
+}
+.server-pingfen{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 250px;
+	padding-top: 100px;
+	background:#F4FFF2;
+}
+.server-biaoqian{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	padding: 8px 10px;
+	height: 60px;
+	background: url("../img/同城/汽车维修/shuqian.png") no-repeat 0 0;
+	color: white;
+	/*text-align: center;*/
+	font-size: 16px;
+}
+.server-biaoqian h2{
+	padding-top: 5px;
+}
+.server-zh{
+	padding: 0 20px;
+	font-size: 16px;
+	color: #666;
+}
+.server-zh div{
+	display: inline-block;
+	height: 8px;
+	width: 100px;
+	background-color:#F08200;
+	margin-left: 10px;
+}
+.server-zh span{
+	margin-left: 10px;
+}
+.server-pingfen ul{
+	margin-top: 35px;
+	font-size: 16px;
+	color: #666;
+	display: flex;
+	justify-content: center;
+}
+.server-pingfen ul li{
+	width: 33%;
+	border-left: 2px dashed #ddd;
+	text-align: center;
+}
+.server-pingfen ul li:first-child{
+	border-left: none;
+}
+.server-pingfen ul li span{
+	display: inline-block;
+	margin-top: 10px;
+	color: #FF6C00;
+	font-size: 18px;
+}
+.server-title{
+	width: 1280px;
+	margin: 0 auto;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.server-title span{
+	line-height: 55px;
+	color: #666;
+}
+.server-title a{
+	padding: 5px 10px;
+	margin: 0 5px;
+}
+
+.server-good{
+	width: 1280px;
+	margin: 0 auto 10px;
+}
+.server-good ul{
+	width: 1280px;
+	flex-wrap: wrap;
+}
+.server-good ul li{
+	width: 305px;
+	/*text-align: center;*/
+	border: 1px solid #ECECEC;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 20px;
+}
+.server-good ul li:nth-child(2n+2){
+	margin-left: 15px;
+}
+.server-good ul li:nth-child(4n-1){
+	margin-left: 15px;
+}
+.server-good ul li>img{
+	width: 100%;
+	height: 305px;
+}
+.server-gn{
+	width: 303px;
+	padding: 10px 20px;
+}
+.server-gn h4{
+	font-size: 18px;
+	margin: 10px 0 10px;
+
+}
+.server-gn h5{
+	line-height: 16px;
+	color: #666666;
+	font-size: 14px;
+	margin: 10px 0 10px;
+}
+.server-gn .server-gi{
+	width: 100%;
+	position: relative;
+}
+.server-gi span:first-child{
+	font-size: 20px;
+	color: #FF5757;
+}
+.server-gi span:nth-child(2){
+	margin-left: 5px;
+	font-size: 16px;
+	color: #666666;
+	text-decoration: line-through;
+}
+.server-gi img{
+	position: absolute;
+	right: 50px;
+	top: -5px;
+	cursor: pointer;
+}
+.server-title .server-wei{
+	background-color: white;
+	color: black;
+}
+.server-title .server-click{
+	background-color: #4b943d;
+	color: white;
+}
+.server-title a:hover{
+	background-color: #4b943d;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+

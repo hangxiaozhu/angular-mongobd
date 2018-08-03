@@ -1,0 +1,185 @@
+.pay-sign {
+    margin: 80px 0 50px 0;
+    text-align: center;
+}
+
+.pay-text {
+    text-align: center;
+    color: #666;
+}
+
+.pay-text span {
+    color: #F08200;
+}
+
+.pay-address {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    padding-left: 40px;
+    border: solid 1px #ddd;
+    background: url("../img/积分商城/shop_address.png") no-repeat 15px center #F4FFF2;
+    color: #666;
+}
+
+.pay-price {
+    margin: 40px 0;
+    color: #666;
+}
+
+.pay-price .price {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #D20A11;
+}
+
+.pay-price .number {
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.pay-title {
+    padding-bottom: 20px;
+    color: #666;
+    border-bottom: solid 1px #ddd;
+}
+
+.pay-list {
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.pay-list li {
+    float: left;
+    line-height: 40px;
+    margin-right: 30px;
+}
+
+.pay-list li input {
+    vertical-align: 12px;
+    margin-right: 10px;
+}
+
+.pay-list li:nth-child(1) a {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background: url("../img/积分商城/zhifubao_pay.png") no-repeat center center;
+    border: solid 1px #ddd;
+}
+
+.pay-list li:nth-child(2) a {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background: url("../img/积分商城/weixin_pay.png") no-repeat center center;
+    border: solid 1px #ddd;
+}
+
+
+/*.pay-list li:nth-child(3) a {display: inline-block; width: 130px; height: 40px; padding-left: 55px; background: url("../imgs/yinlian.png") no-repeat 10px center; border: solid 1px #ddd;}*/
+
+.pay-list li:nth-child(3) a {
+    display: inline-block;
+    color:black;
+    width: 200px;
+    height: 40px;
+    padding-left: 55px;
+    background: url("../img/积分商城/yue.png") no-repeat 10px center;
+    border: solid 1px #ddd;
+}
+
+.pay-list li:nth-child(3) input,
+.pay-list li:nth-child(4) input {
+    vertical-align: 0;
+}
+
+.pay-show {
+    margin-bottom: 40px;
+    padding: 60px 250px;
+    border: solid 1px #ddd;
+    overflow: hidden;
+    color: #666;
+}
+
+.pay-show img {
+    display: block;
+}
+
+.pay-show .left {
+    float: left;
+    width: 375px;
+    text-align: center;
+}
+.pay-show .left h4{
+    font-size: 20px;
+}
+
+.pay-show .left a{
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    line-height: 40px;
+    background-color: #F08200;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pay-show .left img {
+    margin: 40px auto;
+}
+
+.pay-show .center {
+    float: left;
+    width: 20px;
+    text-align: center;
+    line-height: 280px;
+}
+
+.pay-show .right {
+    float: right;
+    width: 375px;
+    text-align: center;
+}
+
+.pay-show .right img {
+    width: 220px;
+    height: 220px;
+    margin: 40px auto 0;
+}
+
+.pay-weixin {
+    display: none;
+}
+
+.pay-weixin .left img {
+    margin: auto;
+}
+
+.pay-weixin .center {
+    border-left: solid 1px #ddd;
+    height: 300px;
+}
+
+
+/*支付成功*/
+
+.pay-ok {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.pay-ok div {
+    margin: 40px 0;
+}
+
+.pay-ok div a:last-child {
+    background-color: #498E3D;
+}
+
+.pay-ok h4 {
+    color: #666;
+}

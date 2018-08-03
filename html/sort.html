@@ -1,0 +1,50 @@
+
+		<div class="sort">
+			<div class="sort-location">
+				<span class="firstt">您的当前位置:</span>
+				<p ui-sref="home" style="cursor: pointer"><span>首页</span></p>
+				<p href=""><span>>&nbsp;&nbsp;全部商品</span></p>
+				<p href="" class="sort-two"><span>发生的</span></p>
+				<p href="" class="sort-thire"><span>风景</span></p>
+			</div>
+			<div class="sort-spp">	
+			<!--一级分类-->
+			<div class="sort-first">
+				<span>一级分类:</span>
+				<p href="###" class="us" ng-click="sortOneAll()">全部</p>
+				<p href="###" ng-repeat="x in category0" ng-bind="x" ng-click="sortC1($index,x)"></p>
+			</div>
+			<!--二级分类-->
+			<div class="sort-sec">
+			<div class="sort-second">
+				<span>二级分类:</span>
+				<p href="###" class="sort-rs sort-rus sort-ab" ng-click="sortSeAll()">全部</p>
+				<p href="###" ng-repeat="a in categoryE0" ng-bind="a" ng-click="sortC2($index,a)"></p>
+			</div>
+			</div>
+			</div>	
+				<!--排序类-->
+			<div class="sort-sequence">
+				<span>排序:</span>
+				<p class="sort-aa">销量</p>
+				<p ng-click="highToLow()">价格从高到低</p>
+				<p ng-click="lowToHigh()">价格从低到高</p>
+				<p>评价最高</p>
+			</div>
+				
+			<!--商品-->
+			<div class="sort-homeths">
+			<ul>
+				<li ng-repeat="a in categoryFens">
+					<a ui-sref="handlens({discounts:a.discounts, price:a.price, tradeName:a.tradeName, imgSrc:a.photo})"><img src={{a.photo}}/></a>
+					<p ng-bind="a.tradeName"></p>
+					<span class="sort-pp" ng-bind="a.price | currency:'¥'"></span>
+					<span class="sort-non" ng-bind="a.discounts | currency:'¥'"></span>
+					<span class="sort-price"><img src="../img/海鲜水产/img_62.png"/></span>
+				</li>
+			</ul>
+				<div class="sort-btn">
+					<button ng-repeat="x in page" ng-bind="x" ng-click="getProsByPage(x)" ng-class="getClassByPage(x)"></button>
+				</div>
+		</div>
+		</div>

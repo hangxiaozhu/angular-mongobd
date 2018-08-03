@@ -1,0 +1,391 @@
+a {
+	text-decoration: none;
+}
+
+.index-header {
+	border-bottom: 1px solid #efeeec;
+}
+.index-top {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	background-color: #eeeeee;
+	color: #6f6f6f;
+}
+.index-top-cont {
+	width: 1280px;
+	margin: 0 auto;
+}
+.index-top-cont-right {
+	float: right;
+}
+.index-top-cont-right a {
+	color: #6f6f6f;
+	padding: 0 15px 0 15px;
+	border-right: 1px solid #999999;
+}
+.index-bottom {
+	height: 130px;
+	width: 100%;
+	background-color: white;
+}
+.index-bottom-cont {
+	width: 1280px;
+	height: 130px;
+	margin: 0 auto;
+}
+.index-bottom-logo {
+	display: inline-block;
+	width: 370px;
+	height: 100%;
+}
+.index-bottom-logo img {
+	margin-top: 25px;
+}
+.index-bottom-search {
+	display: inline-block;
+	width: 498px;
+	height: 100%;
+	vertical-align: top;
+	margin-left: 95px;
+}
+.index-bottom-search div {
+	width: 495px;
+	height: 40px;
+	border: 2px solid #4b943d;
+	margin-top: 50px;
+	background-color: white;
+}
+.index-bottom-search>div>input {
+	height: 38px;
+	outline: none;
+	border: none;
+	width: 400px;
+	margin-left: 11px;
+}
+.index-bottom-search>div>span {
+	display: inline-block;
+	float: right;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: top;
+	width: 42px;
+	height: 40px;
+	background-color: #4b943d;
+}
+.index-bottom-search>span {
+	display: inline-block;
+	color: #7a7a7a;
+	margin: 9px 25px 0 0;
+}
+.index-bottom-myCen {
+	display: inline-block;
+	width: 300px;
+	height: 100%;
+	vertical-align: top;
+}
+.index-bottom-myCen a{
+	position: relative;
+	display: inline-block;
+	width: 125px;
+	height: 40px;
+	border: 2px solid #e5e5e5;
+	background-color: #f8f8f6;
+	text-align: center;
+	line-height: 40px;
+	margin: 50px 0 0 18px;
+	color: #838383;
+}
+.index-bottom-myCen a img {
+	vertical-align: top;
+	margin: 12px 13px 0 0;
+}
+.index-nav {
+	position: relative;
+	width: 1280px;
+	height: 50px;
+	margin: 0 auto;
+}
+.index-nav>a:hover{
+	background-color: #f08200;
+	color: white;
+}
+.index-nav>span {
+	display: inline-block;
+	width: 170px;
+	text-align: center;
+	line-height: 50px;
+}
+.index-nav>a {
+	padding: 15px 0 14px 0;
+	color: black;
+}
+.index-nav>a>span {
+	display: inline-block;
+	padding: 0 60px 0 60px;
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}
+.index-nav .index-nav-active {
+	background-color: #f08200;
+	color: white;
+}
+.index-nav>ul {
+	display: none;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	top: 50px;
+	width: 170px;
+	height: 500px;
+	background-color: white;
+}
+.index-nav>ul>li {
+	height: 55px;
+	width: 100%;
+	border-bottom: 1px solid #efeeec;
+	text-align: center;
+	line-height: 55px;
+}
+.index-nav>ul>li>a {
+	color: black;
+}
+.index-nav>ul>li>a>img {
+	margin: 16px 13px 0 0;
+	vertical-align: top;
+}
+.index-nav-classify {
+	display: none;
+	position: absolute;
+	width: 460px;
+	height: 500px;
+	left: 170px;
+	top: 0;
+	background-color: #f4f9ed;
+}
+.index-nav-classify>div {
+	background-color: white;
+	text-align: center;
+	padding: 15px;
+}
+.index-nav-classify>div:hover {
+	background-color: #f4f9ed;
+}
+.index-nav-classify>div>a {
+	color: green;
+}
+
+
+.index-about-top {
+	width: 100%;
+	height: 105px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.index-about-top div {
+	width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+.index-about-top div a {
+	display: inline-block;
+	width: 254px;
+	height: 60px;
+	line-height: 60px;
+	margin-top: 23px;
+	border-right: 1px solid #dddddd;
+	font-size: 24px;
+	color: #000;
+}
+.index-about-top div a:last-child {
+	border: none;
+}
+.index-about-top div a img {
+	vertical-align: top;
+	margin: 8px 20px 0 0;
+}
+.index-about-center {
+	width: 100%;
+	height: 200px;
+	border-bottom: 1px solid #dddddd;
+}
+.index-about-center>div {
+	width: 1280px;
+	margin: 0 auto;
+}
+.index-about-center-left {
+	display: inline-block;
+	width: 370px;
+	margin-top: 30px;
+}
+.index-about-center-left p {
+	margin-top: 38px;
+	color: #a0a0a0;
+}
+.index-about-center-left p img {
+	margin: 0 6px 0 20px;
+}
+.index-about-center-left p span {
+	color: #f08200;
+	vertical-align: top;
+}
+.index-about-center-cen {
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+	margin: 20px 0 0 40px;
+	text-align: center;
+}
+.index-about-center-cen div:first-child {
+	float: left;
+}
+.index-about-center-cen div:last-child {
+	float: right;
+}
+.index-about-center-cen p {
+	margin-top: 18px;
+	color: #b3b3b3;
+	font-weight: 100;
+}
+.index-about-center-right {
+	display: inline-block;
+	width: 500px;
+	vertical-align: top;
+	margin: 30px 0 0 40px;
+}
+.index-about-center-right ul {
+	float: left;
+	width: 90px;
+	margin-right: 35px;
+}
+.index-about-center-right ul li {
+	margin-top: 30px;
+	font-size: 14px;
+	color: #b3b3b3;
+	font-weight: 200;
+}
+.index-about-center-right a{
+	color: #b3b3b3;
+}
+.index-about-bottom {
+	height: 82px;
+	width: 100%;
+}
+.index-about-bottom div {
+	width: 1280px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+}
+.index-about-bottom div p:first-child {
+	margin-top: 20px;
+	color: #8c8c8c;
+}
+.index-about-bottom div p:last-child {
+	margin-top: 10px;
+	color: #f29220;
+}
+/*html,body{
+    height:100%;
+    overflow:hidden;   
+}*/
+	.index-zhe {
+				position:fixed;
+				width: 100%;
+				height: 100%;
+				background: black;
+				opacity: 0.4;
+				z-index: 5;
+			display: none;
+			}
+			.index-zhao{
+				position: absolute;
+				left: 50%;
+				top:50%;
+				margin-left: -350px;
+				margin-top: -200px;
+				width: 700px;
+				height: 400px;
+				background: url(../img/首页/city_bg.png);
+				background-size: 100% 100%;
+				z-index: 7;	
+				display: none;		
+			}
+			.index-zhao p{
+				margin-top: 60px;
+				margin-left: 40px;
+				font-size: 20px;
+				color:green;
+				margin-bottom: 60px;
+			}
+			.index-zhao span{
+				font-size: 16px;
+				margin:0 20px ;
+				
+			}
+			#sheng{
+				margin-left: 40px;
+			}
+			 #sheng,#shi,#xian {
+			 	font-size: 16px;
+			 	width: 150px;
+			 	height: 30px;		
+			 }
+			 .index-zhao input{
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    margin-top: 60px;
+    margin-left: 250px;
+    background-color: #F08200;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+			 }
+	
+.index-success {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -50px;
+	margin-top: -15px;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;	
+	border:1px solid  burlywood; 
+	background: beige;
+	display: none;
+	z-index: 3;
+}
+.index-title{
+	
+	/*display: inline-block;*/
+	width: 400px;
+	margin-left: 30px;
+	line-height: 90px;
+	display: none;
+	margin-bottom: 20px;
+	
+}
+.index-title span{
+	padding-left: 30px;
+	border-left: 1px solid #ddd;
+	font-size: 20px;
+	color: #666;
+}
+
+#shopCarShu {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	top: -25px;
+	background-color: #f08200;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	border-radius: 10px;
+}
+
